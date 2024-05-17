@@ -2,8 +2,10 @@
 
 // comentario em linha
 
-/*comentario 
+/*
+comentario 
 de
 varias
-linhas */
+linhas 
+*/
 
