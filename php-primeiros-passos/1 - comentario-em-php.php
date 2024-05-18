@@ -1,11 +1,10 @@
 <?php
+    // comentario em linha
 
-// comentario em linha
-
-/*
-comentario 
-de
-varias
-linhas 
-*/
-
+    /*
+    comentario 
+    de
+    varias
+    linhas 
+    */
+?>
