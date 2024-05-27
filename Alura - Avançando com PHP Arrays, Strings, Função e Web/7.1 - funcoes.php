@@ -1,5 +1,6 @@
 <?php
-    echo "Olá. Arquivos de funções aqui.\n";
+    # 6.7 - banco.php
+    #echo "Olá. Arquivos de funções aqui.\n";
 
     function sacar(array $conta, float $valorASacar) : array 
     {
