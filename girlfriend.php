@@ -6,7 +6,7 @@
     $resposta = trim(fgets(STDIN));
 
     while ($resposta != "s") {
-        echo "Ops... resposta errada  :/\nTente novamente meu amor :) :) :)\n" .  "\n$mensagem";
+        echo "Ops... resposta errada  :/\nTente novamente meu amor :) :) :)\n" . "\n$mensagem";
         $resposta = trim(fgets(STDIN));
     }
     $teamo = "Te amo :D\nTe amo :D\nTe amo :D\n";
