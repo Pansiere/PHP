@@ -3,18 +3,9 @@
 require_once '7 - funcoes.php';
 
 $contasCorrentes = [
-    '123.456.789-11' =>  [
-        'titular' => 'Vinicius',
-        'saldo' => 1000
-    ],
-    '123.456.789-21' =>  [
-        'titular' => 'Maria',
-        'saldo' => 10000
-    ],
-    '123.456.789-31' =>  [
-        'titular' => 'Victoria',
-        'saldo' => 300
-    ]
+    '123.456.789-11' =>  ['titular' => 'Vinicius', 'saldo' => 1000],
+    '123.456.789-21' =>  ['titular' => 'Maria', 'saldo' => 10000],
+    '123.456.789-31' =>  ['titular' => 'Victoria', 'saldo' => 300]
 ];
 
 $contasCorrentes['123.456.789-21'] = depositar($contasCorrentes['123.456.789-21'], valorADepositar: -900);
