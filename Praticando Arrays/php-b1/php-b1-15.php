@@ -6,8 +6,10 @@
 
     for ($i = 0; $i <= 6; $i++){
         echo $i == 0 ? "Digite o 1º elemento ou um número: " : "Digite o " . ($i + 1) . "° elemento ou um número: ";
-        $lista[] = trim(fgets(STDIN));
-
-        echo gettype($lista[$i]) . PHP_EOL;
+        $lista[$i] = trim(fgets(STDIN));
+        
+        if (is_numeric($lista[$i])){
+            echo ($lista[$i]) . PHP_EOL;
+        }
     }
 ?>
