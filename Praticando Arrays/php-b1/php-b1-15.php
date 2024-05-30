@@ -4,13 +4,10 @@
 */
     echo "Programa que lê um array de 7 elementos e um número. E imprimi se o número está presente no array e em que posição(ões).\n";
 
-    for ($i = 1; $i <= 7; $i++){
-        echo "Digite o " . $i . "° elemento ou um número: ";
+    for ($i = 0; $i <= 6; $i++){
+        echo $i == 0 ? "Digite o 1º elemento ou um número: " : "Digite o " . ($i + 1) . "° elemento ou um número: ";
         $lista[] = trim(fgets(STDIN));
-    }   
-    foreach ($lista as $var) {
-        if (gettype($var) === "integer") {
-            echo "teste";
-        }
+
+        echo gettype($lista[$i]) . PHP_EOL;
     }
 ?>
