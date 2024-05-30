@@ -8,17 +8,14 @@ Exemplo:
 ● Porcentagem da gorjeta: 10%
 ● Valor da gorjeta: R$ 12,00
 ● Valor total a ser pago: R$ 132,00 */
-    
-    echo "Programa que calcula a gorjeta a ser paga em um restaurante. O solicita ao usuário o valor total da conta e a porcentagem da gorjeta. Em seguida, o programa calcula o valor da gorjeta e o valor total a ser pago, incluindo a gorjeta.\nDigite o valor total da conta: ";
 
-    $valorDaConta = trim(fgets(STDIN));
+echo "Programa que calcula a gorjeta a ser paga em um restaurante. O solicita ao usuário o valor total da conta e a porcentagem da gorjeta. Em seguida, o programa calcula o valor da gorjeta e o valor total a ser pago, incluindo a gorjeta.\nDigite o valor total da conta: ";
 
-    echo "Digite o valor total da gorjeta: ";
-    $porcentagemDaGorjeta= trim(fgets(STDIN));
+$valorDaConta = trim(fgets(STDIN));
 
-    $valorDaGorgeta = ;
+echo "Digite o valor total da gorjeta: ";
+$porcentagemDaGorjeta = trim(fgets(STDIN));
 
-    echo "O valor total a ser pago junto com a gorjeta é de: "
+$valorDaGorgeta = 1;
 
-    
-?>
+echo "O valor total a ser pago junto com a gorjeta é de: ";
