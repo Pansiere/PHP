@@ -5,7 +5,7 @@ Você está desenvolvendo um sistema de compras online e precisa calcular o valo
 2 - Dentro da função, calcule o valor do desconto aplicando a porcentagem sobre o valor original.
 3 - Subtraia o valor do desconto do valor original para obter o valor final com desconto.
 4 - Retorne o valor final com desconto.*/
-    function calculo($valor, $porcentagemDeDesconto){
+    function calculo($valor, $porcentagemDeDesconto){ 
         $SomaDoDesconto = $valor / 100 * $porcentagemDeDesconto;
         $valorComDesconto = $valor - $SomaDoDesconto;
         return $valorComDesconto;
