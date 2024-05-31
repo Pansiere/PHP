@@ -2,8 +2,7 @@
     # 6.7 - banco.php
     #echo "Olá. Arquivos de funções aqui.\n";
 
-    function sacar(array $conta, float $valorASacar) : array 
-    {
+    function sacar(array $conta, float $valorASacar) : array {
         if ($valorASacar > $conta ['saldo']) {
             exibeMensagem(mensagem:"Você não pode sacar.");
         } else {
