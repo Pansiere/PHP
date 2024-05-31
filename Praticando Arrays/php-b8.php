@@ -24,5 +24,5 @@
         $media = calcularMedia($notas);
         echo "A média do Aluno " . ($indiceAluno + 1) . " é de: " . $media . PHP_EOL;
     }
-//passei umas 3hrs nesse código. acho q agr foi :')
+//passei umas 3hrs nesse código. Acho q agr foi :')
 ?>
