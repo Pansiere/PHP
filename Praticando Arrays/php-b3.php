@@ -1,15 +1,15 @@
 <?php
-/*
-CÁLCULO DE ÁREA E PERÍMETRO DE UM RETÂNGULO
-Crie um programa que calcule a área e o perímetro de um retângulo. O programa deve solicitar ao usuário a largura e a altura do retângulo, e então exibir os resultados.
-Fórmulas:
-● Área = largura * altura
-● Perímetro = 2 * (largura + altura)
-Exemplo:
-● Largura: 5 metros
-● Altura: 3 metros
-● Área: 15 m²
-● Perímetro: 16 metros */
+    /*
+    CÁLCULO DE ÁREA E PERÍMETRO DE UM RETÂNGULO
+    Crie um programa que calcule a área e o perímetro de um retângulo. O programa deve solicitar ao usuário a largura e a altura do retângulo, e então exibir os resultados.
+    Fórmulas:
+    ● Área = largura * altura
+    ● Perímetro = 2 * (largura + altura)
+    Exemplo:
+    ● Largura: 5 metros
+    ● Altura: 3 metros
+    ● Área: 15 m²
+    ● Perímetro: 16 metros */
     echo "Programa que calcula a área e o perímetro de um retângulo. O programa solicitará ao usuário a largura e a altura do retângulo, e então exibira os resultados.\nDigite a largura do retângulo: ";
     $largura = trim(fgets(STDIN));
     echo "Agora, digite a altura do retângulo: ";

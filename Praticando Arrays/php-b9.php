@@ -32,3 +32,4 @@
 
     $valorTotalDaCompra = calcularDescontoProgressivo($valorCompra);
     echo $valorTotalDaCompra;
+?>

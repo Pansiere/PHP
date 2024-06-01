@@ -1,7 +1,7 @@
 <?php
-/*
-CALCULADORA DE IMC (ÍNDICE DE MASSA CORPORAL)
-Solicite ao usuário seu peso (em quilogramas) e altura (em metros) e calcule o IMC utilizando a fórmula: IMC = peso / (altura * altura). */
+    /*
+    CALCULADORA DE IMC (ÍNDICE DE MASSA CORPORAL)
+    Solicite ao usuário seu peso (em quilogramas) e altura (em metros) e calcule o IMC utilizando a fórmula: IMC = peso / (altura * altura). */
     echo "Calculadora de IMC (ÍNDICE DE MASSA CORPORAL)\nDigite o seu peso: ";
     $peso = trim(fgets(STDIN));
     echo "Agora, digite sua altura: ";
@@ -22,5 +22,5 @@ Solicite ao usuário seu peso (em quilogramas) e altura (em metros) e calcule o 
             echo "\nSeu IMC é de $imc.\nEsta em Obesidade II(severa). Mesmo que seus exames aparentem estar normais, é hora de se cuidar, iniciando mudanças no estilo de vida com o acompanhamento próximo de profissionais de saúde.";
         } else {
             echo "\nSeu IMC é de $imc.\nEsta em Obesidade III(mórbida). Aqui o sinal é vermelho, com forte probabilidade de já existirem doenças muito graves associadas. O tratamento deve ser ainda mais urgente.";
-        }
+    }
 ?>
