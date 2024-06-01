@@ -6,7 +6,7 @@
 4. Após calcular o valor que cada pessoa deve pagar, imprima o resultado, indicando quanto cada uma deve contribuir para o churrasco.
 5. Imprima qual foi o item mais caro do churrasco.
 6. Se o número de participantes for igual ou menor que um, imprima uma mensagem. “O churrasco foi cancelado, todo mundo furou!”*/
-function valorPorPessoa($valorTodosItens, $numeroTotalParticipantes): float{
+function valorPorPessoa($valorTodosItens, $numeroTotalParticipantes) {
     $valorCadaPessoaDevePagar = $valorTodosItens / $numeroTotalParticipantes;
     return $valorCadaPessoaDevePagar;
 }
@@ -25,10 +25,10 @@ for ($i = 0; $i < count($precoItens); $i++) {
 }
 echo "Qual o numero total de participantes? ";
 $numeroParticipantes = trim(fgets(STDIN));
-$resultado = valorPorPessoa($totalPrecoItens, $numeroParticipantes);
 
-if ($numeroParticipantes < 2) {
-    echo "O churrasco foi cancelado, todo mundo furou!";
-}else {
+if ($numeroParticipantes >= 2) {
+    $resultado = valorPorPessoa($totalPrecoItens, $numeroParticipantes);
     echo "Cada pessoa deve contribuir para o churrasco com R$" . $resultado . ",00.\nO item mais caro do churrasco foi o(a) " . $itensComprados[$indiceItemMaisCaro] . ", que custou R$$itemMaisCaro,00.";
+}else {
+    echo "O churrasco foi cancelado, todo mundo furou!";
 }
