@@ -6,8 +6,7 @@
 4. Após calcular o valor que cada pessoa deve pagar, imprima o resultado, indicando quanto cada uma deve contribuir para o churrasco.
 5. Imprima qual foi o item mais caro do churrasco.
 6. Se o número de participantes for igual ou menor que um, imprima uma mensagem. “O churrasco foi cancelado, todo mundo furou!”*/
-function valorPorPessoa($valorTodosItens, $numeroTotalParticipantes): float
-{
+function valorPorPessoa($valorTodosItens, $numeroTotalParticipantes): float{
     $valorCadaPessoaDevePagar = $valorTodosItens / $numeroTotalParticipantes;
     return $valorCadaPessoaDevePagar;
 }
