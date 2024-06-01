@@ -62,6 +62,6 @@
     ];
     foreach($listaFuncionarios as $infoFuncionario => $info){
         $salarioTotal = calcularSalarioTotal($info['salarioBase'], $info['horasExtras'], $valorHoraExtra = 1.5);
-        listarFuncionarios(funcionarios: "Funcionário(a) $infoFuncionario possuí salário base de R$$info[salarioBase],00. E possui $info[horasExtras]hrs de trabalho extra, totalizando em um salário total de R$$salarioTotal.\n");
+        listarFuncionarios(funcionarios: "Funcionário(a) $infoFuncionario possuí salário base de R$$info[salarioBase],00. E possui $info[horasExtras]hrs de trabalho extra, totalizando um salário total de R$$salarioTotal.\n");
     }
 ?>
