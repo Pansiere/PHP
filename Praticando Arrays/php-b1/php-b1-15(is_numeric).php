@@ -7,13 +7,13 @@
     for ($i = 0; $i <= 6; $i++){
         echo $i == 0 ? "Digite o 1° elemento ou um número: " : "Digite o " . ($i + 1) . "° elemento ou um número: ";
         $lista[$i] = trim(fgets(STDIN));
-    }
-    echo "Digite um número para verificar se ele existe ou não na lista: ";
-    $numero = trim(fgets(STDIN));
 
-    for ($i = 0; $i < count($lista); $i++){
-        if($lista[$i] == $numero){
-            echo "No índice  existe um número, que é numerosPresentes" . PHP_EOL;
+        if (is_numeric($lista[$i])){
+            $numerosPresentes[] = $lista[$i];
+            $indiceDosNumeros [] = $i;
         }
+    }
+    for ($i = 0; $i < count($numerosPresentes); $i++){
+        echo "No índice " .  $indiceDosNumeros[$i] . " existe um número, que é: " . $numerosPresentes[$i] . "." . PHP_EOL;
     }
 ?>
