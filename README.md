@@ -1,2 +1,2 @@
-# My self-study - learning-php
+# My self-study in learning PHP
 Aprendendo PHP
