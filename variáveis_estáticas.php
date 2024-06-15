@@ -11,6 +11,7 @@ function calculate_running_total($price, $quantity)
     return $running_total;
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 
