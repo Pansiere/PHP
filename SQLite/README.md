@@ -13,7 +13,7 @@ SQLite source code is in the public-domain and is free to everyone to use for an
 Isso geralmente acontece quando a extensão SQLite3 não está habilitada no PHP.
 Aqui estão os passos para resolver esse problema:
 
-**Passo 1:** Verificar se a extensão SQLite3 está instalada.
+**Passo 1:** Verificar se a extensão SQLite3 está instalada.  
 Crie um arquivo PHP com o seguinte conteúdo e execute-o:
 
 ```php
