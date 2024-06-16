@@ -31,12 +31,20 @@ Se você estiver usando um sistema baseado em Linux (como Ubuntu), você pode in
 sudo apt-get install php-sqlite3
 ```
 
-Depois de instalar a extensão, reinicie o servidor web (por exemplo, Apache ou Nginx):
-**Para Apache**
-```sudo systemctl restart apache2 ```
+Depois de instalar a extensão, reinicie o servidor web (por exemplo, Apache ou Nginx):  
+Para Apache:  
 
-**Para Nginx**
-```sudo systemctl restart nginx```
-Se você estiver usando Windows, verifique se a linha abaixo no arquivo php.ini está descomentada (remova o ponto e vírgula no início):extension=sqlite3Depois de modificar o arquivo php.ini, reinicie o servidor web.
-**Passo 3:** Verificar novamente
+```bash
+sudo systemctl restart apache2 
+```  
+
+Para Nginx:
+```bash
+sudo systemctl restart nginx
+```  
+
+Se estiver usando Windows, verifique se a linha abaixo no arquivo php.ini está descomentada (remova o ponto e vírgula no início):extension=sqlite3  
+Depois de modificar o arquivo php.ini, reinicie o servidor web.  
+
+**Passo 3:** Verificar novamente  
 Execute novamente o script phpinfo() para garantir que a extensão SQLite3 está habilitada.
