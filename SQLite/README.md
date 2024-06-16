@@ -8,7 +8,7 @@ The SQLite file format is stable, cross-platform, and backwards compatible and t
 
 SQLite source code is in the public-domain and is free to everyone to use for any purpose.
 
-**O erro que você encontrou indica que a classe SQLite3 não está disponível no seu ambiente PHP**
+# O erro que você encontrou indica que a classe SQLite3 não está disponível no seu ambiente PHP
 
 Isso geralmente acontece quando a extensão SQLite3 não está habilitada no PHP.Aqui estão os passos para resolver esse problema
 
@@ -27,10 +27,10 @@ Procure por informações sobre SQLite3 na página gerada. Se você não encontr
 ```sudo apt-get install php-sqlite3```
 
 Depois de instalar a extensão, reinicie o servidor web (por exemplo, Apache ou Nginx):
-# Para Apache
+**Para Apache**
 ```sudo systemctl restart apache2 ```
 
-# Para Nginx
+**Para Nginx**
 ```sudo systemctl restart nginx```
 Se você estiver usando Windows, verifique se a linha abaixo no arquivo php.ini está descomentada (remova o ponto e vírgula no início):extension=sqlite3Depois de modificar o arquivo php.ini, reinicie o servidor web.
 **Passo 3:** Verificar novamente
