@@ -17,7 +17,7 @@ Isso geralmente acontece quando a extensão SQLite3 não está habilitada no PHP
 <?php
 phpinfo();
 ?>
-
+```
 
 Procure por informações sobre SQLite3 na página gerada. Se você não encontrar nenhuma menção ao SQLite3, significa que a extensão não está instalada.Passo 2: Instalar a extensão SQLite3Se você estiver usando um sistema baseado em Linux (como Ubuntu), você pode instalar a extensão SQLite3 para PHP usando o gerenciador de pacotes:sudo apt-get install php-sqlite3Depois de instalar a extensão, reinicie o servidor web (por exemplo, Apache ou Nginx):sudo systemctl restart apache2  # Para Apache
 sudo systemctl restart nginx    # Para NginxSe você estiver usando Windows, verifique se a linha abaixo no arquivo php.ini está descomentada (remova o ponto e vírgula no início):extension=sqlite3Depois de modificar o arquivo php.ini, reinicie o servidor web.Passo 3: Verificar novamenteExecute novamente o script phpinfo() para garantir que a extensão SQLite3 está habilitada.
