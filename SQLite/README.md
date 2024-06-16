@@ -43,7 +43,10 @@ Para Nginx:
 sudo systemctl restart nginx
 ```  
 
-Se estiver usando Windows, verifique se a linha abaixo no arquivo php.ini está descomentada (remova o ponto e vírgula no início):extension=sqlite3  
+Se estiver usando Windows, verifique se a linha abaixo no arquivo php.ini está descomentada (remova o ponto e vírgula no início):  
+
+```extension=sqlite3```  
+
 Depois de modificar o arquivo php.ini, reinicie o servidor web.  
 
 **Passo 3:** Verificar novamente  
