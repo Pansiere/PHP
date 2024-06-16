@@ -10,9 +10,11 @@ SQLite source code is in the public-domain and is free to everyone to use for an
 
 # Erro que indica que a classe SQLite3 não está disponível no seu ambiente PHP
 
-Isso geralmente acontece quando a extensão SQLite3 não está habilitada no PHP.Aqui estão os passos para resolver esse problema
+Isso geralmente acontece quando a extensão SQLite3 não está habilitada no PHP.
+Aqui estão os passos para resolver esse problema:
 
-**Passo 1:** Verificar se a extensão SQLite3 está instaladaCrie um arquivo PHP com o seguinte conteúdo e execute-o:
+**Passo 1:** Verificar se a extensão SQLite3 está instalada.
+Crie um arquivo PHP com o seguinte conteúdo e execute-o:
 
 ```php
 <?php
@@ -22,7 +24,8 @@ phpinfo();
 
 Procure por informações sobre SQLite3 na página gerada. Se você não encontrar nenhuma menção ao SQLite3, significa que a extensão não está instalada.
 
-**Passo 2:** Instalar a extensão SQLite3Se você estiver usando um sistema baseado em Linux (como Ubuntu), você pode instalar a extensão SQLite3 para PHP usando o gerenciador de pacotes:
+**Passo 2:** Instalar a extensão SQLite3.
+Se você estiver usando um sistema baseado em Linux (como Ubuntu), você pode instalar a extensão SQLite3 para PHP usando o gerenciador de pacotes:
 
 ```sudo apt-get install php-sqlite3```
 
