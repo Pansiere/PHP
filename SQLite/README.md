@@ -24,7 +24,7 @@ phpinfo();
 
 Procure por informações sobre SQLite3 na página gerada. Se você não encontrar nenhuma menção ao SQLite3, significa que a extensão não está instalada.
 
-**Passo 2:** Instalar a extensão SQLite3.
+**Passo 2:** Instalar a extensão SQLite3. 
 Se você estiver usando um sistema baseado em Linux (como Ubuntu), você pode instalar a extensão SQLite3 para PHP usando o gerenciador de pacotes:
 
 ```sudo apt-get install php-sqlite3```
