@@ -8,7 +8,7 @@ The SQLite file format is stable, cross-platform, and backwards compatible and t
 
 SQLite source code is in the public-domain and is free to everyone to use for any purpose.
 
-# O erro que você encontrou indica que a classe SQLite3 não está disponível no seu ambiente PHP
+# Erro que indica que a classe SQLite3 não está disponível no seu ambiente PHP
 
 Isso geralmente acontece quando a extensão SQLite3 não está habilitada no PHP.Aqui estão os passos para resolver esse problema
 
