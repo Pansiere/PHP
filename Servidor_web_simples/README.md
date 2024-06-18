@@ -2,7 +2,7 @@
 
 ## Para iniciar um servidor web simples, a partir do PHP 5.4, você pode usar o servidor embutido para desenvolvimento, o que é muito conveniente. É uma maneira rápida e fácil de testar e desenvolver aplicações PHP localmente, sem a necessidade de configurar um servidor web completo como Apache ou Nginx
 
-**Atenção:**
+**Atenção:**  
 **O servidor embutido do PHP é projetado apenas para fins de desenvolvimento. Ele não é adequado para uso em produção, pois não é otimizado para desempenho, segurança ou escalabilidade. É recomendado usar servidores web robustos, como Apache ou Nginx, em ambientes de produção para garantir melhor desempenho e segurança das suas aplicações.**
 
 **Aqui está como fazer isso:**
