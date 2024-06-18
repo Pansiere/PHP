@@ -2,9 +2,8 @@
 
 ## Para iniciar um servidor web simples a partir do PHP 5.4, você pode usar o servidor embutido para desenvolvimento, o que é muito conveniente
 
-### Aqui está como fazer isso:
+**Aqui está como fazer isso. Passos para iniciar um servidor PHP:**
 
-Passos para iniciar um servidor PHP:
 Abra o terminal (ou prompt de comando).
 Navegue até o diretório onde deseja iniciar o servidor.
 Execute o seguinte comando:
