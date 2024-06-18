@@ -2,37 +2,40 @@
 
 ## Para iniciar um servidor web simples a partir do PHP 5.4, você pode usar o servidor embutido para desenvolvimento, o que é muito conveniente
 
-**Aqui está como fazer isso. Passos para iniciar um servidor PHP:**
+**Aqui está como fazer isso:**  
+**Passo 1 - Crie um arquivo chamado index.php no diretório onde você está rodando o servidor com o seguinte conteúdo:**
 
-Abra o terminal (ou prompt de comando).
-Navegue até o diretório onde deseja iniciar o servidor.
-Execute o seguinte comando:
-sh
-Copiar código
-php -S localhost:8000
-Este comando inicia um servidor PHP no diretório atual, que estará disponível no endereço `http://localhost:8000`. Você pode mudar o número da porta (8000) para qualquer número de porta que desejar, desde que não esteja em uso.
+```PHP
+<?php
+// List files and directories
+$directory = '.';
+$files = scandir($directory);
 
-é uma maneira rápida e fácil de testar e desenvolver aplicações PHP localmente, sem a necessidade de configurar um servidor web completo como Apache ou Nginx.
+echo "<h1>Directory listing for $directory</h1>";
+echo "<ul>";
+
+foreach ($files as $file) {
+    if ($file === '.' || $file === '..') continue;
+    echo "<li><a href='$file'>$file</a></li>";
+}
+
+echo "</ul>";
+?>
+```
+
+Este script PHP listará todos os arquivos e diretórios no diretório atual e criará links para cada um deles. Quando você acessar `http://localhost:8000` após iniciar o servidor PHP, você verá uma listagem dos arquivos e diretórios no local.
+
+**Passo2:** Inicie o servidor PHP:  
+No terminal, navegue até o diretório onde você criou o arquivo index.php e execute:
 
 ```bash
 php -S localhost:8000
 ```
 
-php
-Copiar código
+**Passo 3:** Acesse o servidor:  
+Abra o navegador e vá para `http://localhost:8000` Você verá a listagem dos arquivos e diretórios no diretório atual.
 
-<?php
-$port = 8000;
-$dir = __DIR__;
-echo "Starting server at http://localhost:$port\n";
-chdir($dir);
-exec("php -S localhost:$port");
-Depois, execute este script a partir da linha de comando:
+É uma maneira rápida e fácil de testar e desenvolver aplicações PHP localmente, sem a necessidade de configurar um servidor web completo como Apache ou Nginx.
 
-sh
-Copiar código
-php start_server.php
-Considerações Finais
-O servidor embutido do PHP é projetado apenas para desenvolvimento. Não use este servidor em produção, pois ele não é adequado para esse fim.
-O comando php -S localhost:8000 serve arquivos a partir do diretório atual. Certifique-se de navegar para o diretório correto antes de executar o comando.
-Usar o servidor embutido do PHP
+**Atenção:**  
+O servidor embutido do PHP é projetado apenas para fins de desenvolvimento. Ele não é adequado para uso em produção, pois não é otimizado para desempenho, segurança ou escalabilidade. É recomendado usar servidores web robustos, como Apache ou Nginx, em ambientes de produção para garantir melhor desempenho e segurança das suas aplicações.
