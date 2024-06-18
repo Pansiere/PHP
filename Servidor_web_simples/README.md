@@ -9,7 +9,7 @@ Execute o seguinte comando:
 sh
 Copiar código
 php -S localhost:8000
-Este comando inicia um servidor PHP no diretório atual, que estará disponível no endereço http://localhost:8000. Você pode mudar o número da porta (8000) para qualquer número de porta que desejar, desde que não esteja em uso.
+Este comando inicia um servidor PHP no diretório atual, que estará disponível no endereço `http://localhost:8000`. Você pode mudar o número da porta (8000) para qualquer número de porta que desejar, desde que não esteja em uso.
 
 Script PHP opcional
 Se você quiser, pode criar um script PHP específico para iniciar o servidor. Embora isso não seja estritamente necessário, pode ser útil se você deseja automatizar esse processo ou incluí-lo como parte de um projeto maior.
