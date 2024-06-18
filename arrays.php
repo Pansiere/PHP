@@ -1,11 +1,10 @@
 <?php
-$array = [];
-$array[] = ['Valor' => 5];
+$array = [1, 2, 3, 4, 5, 6];
 
-$greeting = "Hello\n";
-echo $greeting;
+foreach ($array as $key) {
+    echo $key . PHP_EOL;
+}
 
-foreach ($array as $key => $numeros) {
-
-    echo 'O índice ' . $key . ' tem o valor de: ' . $numeros['Valor'] . PHP_EOL;
+for ($i = 0; $i < count($array); $i++) {
+    echo 'O índice ' . $i . ' armazena o número ' . $array[$i] . PHP_EOL;
 }
