@@ -1,14 +1,6 @@
-# Script de automação para configuração de terminal ZSH
+# Servidor simples em PHP
 
-## [Deboin e Ubuntu] Para instalar basta colar no seu terminal abaixo:
-
-```bash
-php -S localhost:8000
-```
-
-## [EM OUTRAS DISTROS] Será necessário adaptar os arquivos.
-
-Sim, você pode iniciar um servidor web simples usando PHP de maneira similar ao que faz com Python. A partir do PHP 5.4, você pode usar o servidor embutido para desenvolvimento, o que é muito conveniente. Aqui está como fazer isso:
+## Para iniciar um servidor web simples usando PHP de maneira similar ao que faz com Python. A partir do PHP 5.4, você pode usar o servidor embutido para desenvolvimento, o que é muito conveniente. Aqui está como fazer isso':'
 
 Passos para iniciar um servidor PHP:
 Abra o terminal (ou prompt de comando).
@@ -23,6 +15,14 @@ Script PHP opcional
 Se você quiser, pode criar um script PHP específico para iniciar o servidor. Embora isso não seja estritamente necessário, pode ser útil se você deseja automatizar esse processo ou incluí-lo como parte de um projeto maior.
 
 Crie um arquivo PHP, por exemplo start_server.php, com o seguinte conteúdo:
+
+é uma maneira rápida e fácil de testar e desenvolver aplicações PHP localmente, sem a necessidade de configurar um servidor web completo como Apache ou Nginx.
+
+```bash
+php -S localhost:8000
+```
+
+## [EM OUTRAS DISTROS] Será necessário adaptar os arquivos.
 
 php
 Copiar código
@@ -41,4 +41,4 @@ php start_server.php
 Considerações Finais
 O servidor embutido do PHP é projetado apenas para desenvolvimento. Não use este servidor em produção, pois ele não é adequado para esse fim.
 O comando php -S localhost:8000 serve arquivos a partir do diretório atual. Certifique-se de navegar para o diretório correto antes de executar o comando.
-Usar o servidor embutido do PHP é uma maneira rápida e fácil de testar e desenvolver aplicações PHP localmente, sem a necessidade de configurar um servidor web completo como Apache ou Nginx.
+Usar o servidor embutido do PHP
