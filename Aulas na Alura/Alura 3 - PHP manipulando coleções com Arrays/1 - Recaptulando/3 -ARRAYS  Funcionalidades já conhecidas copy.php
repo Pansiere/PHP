@@ -8,10 +8,7 @@ $array = [
 
 var_dump($array);
 
-foreach ($array as $key) {
-    echo 'Primeiro foreach => Indice ' . $key . PHP_EOL;
-}
-
+//Manipula as índices e as chaves do array
 foreach ($array as $key => $value) {
     echo 'Indice ' . $key . ' tem valor: ' . $value . PHP_EOL;
 }
