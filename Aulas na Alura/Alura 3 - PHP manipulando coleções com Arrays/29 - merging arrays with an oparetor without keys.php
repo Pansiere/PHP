@@ -27,7 +27,6 @@ $novosAlunos = [
     'Array merger',
 ];
 
-$alunos2024 = $alunos2023 + $novosAlunos;
-
 //Observe que os indices serão sobreescritos.
+$alunos2024 = $alunos2023 + $novosAlunos;
 var_dump($alunos2024);
