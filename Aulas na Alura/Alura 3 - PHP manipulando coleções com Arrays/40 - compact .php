@@ -13,7 +13,6 @@ extract($dados);
 var_dump($nome, $nota, $idade);
 
 var_dump(compact('nome', 'nota', 'idade'));
-
 #Cria um array contendo variáveis e seus valores.
 #Para cada um dos parâmetros passados, compact() procura uma variável com o nome especificado na tabela de símbolos e a adiciona no array de saída de forma que o nome da variável será a chave e o seu conteúdo será o valor para esta chave. Em resumo, ela faz o oposto de extract().
 $compact = compact('nome', 'nota', 'idade');
