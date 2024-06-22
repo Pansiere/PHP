@@ -16,8 +16,9 @@ $trans = [
 echo "strtr:\n" . strtr($massege, $trans) . PHP_EOL;
 
 //o 'str_replace' não respeita as alterações já feitas
-echo "\nstr_replace:\n" . str_replace(['hello', 'hi'], ['hi', 'hello'], $massege);
+echo "\nstr_replace:\n" . str_replace(['hello', 'hi'], ['hi', 'hello'], $massege) . PHP_EOL;
 
-//exemplo strtr com meu primeiro nome
+//exemplo str_replace com meu primeiro nome
 $primeiroNome = 'Joao';
-echo PHP_EOL . strtr($primeiroNome, 'a', 'ã') . PHP_EOL;
+echo "\nstr_replace: adicioando '~' no 'a' em $primeiroNome\n"
+    . str_replace('a', 'ã', 'Joao') . PHP_EOL;
