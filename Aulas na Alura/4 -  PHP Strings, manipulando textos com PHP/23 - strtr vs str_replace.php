@@ -6,6 +6,7 @@ strtr(string $string, array $replace_pairs): string
 */
 
 $massege = 'hi all, I said hello';
+
 $primeiroNome = 'Joao';
 
 $trans = [
