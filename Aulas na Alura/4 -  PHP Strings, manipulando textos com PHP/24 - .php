@@ -15,3 +15,16 @@ if (str_ends_with($url, '.br') || str_ends_with($url, '.br/')) {
 } else {
     echo "$url não é um domínio do Brasil.";
 }
+
+$string = "O João foi ao Hotel & Spa passar férias";
+$stringCorrigida = str_replace('&', 'e', $string);
+echo $stringCorrigida;
+
+/*
+<?php
+
+$string = "Joao Pedrao Joao Pedrao";
+$result = preg_replace('/Joao/', 'João', $string);
+echo $result;  // Output: "João Pedrao João Pedrao"
+
+*/
