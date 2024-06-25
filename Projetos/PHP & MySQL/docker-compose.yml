@@ -15,8 +15,8 @@ services:
       - MYSQL_DATABASE=DB
       - MYSQL_USER=php
       - MYSQL_PASSWORD=password
-    ports:
-      - "5002:3306"
+  #    ports:
+  #      - "5002:3306"
 
   webserver:
     image: "nginx:alpine"
