@@ -7,10 +7,9 @@ $hostname = "mysql";
 $username = "php";
 $password = "password";
 $database = "DB";
-$port = 3306;
 
 // Criar a conexão com o MySQL usando MySQLi
-$conn = new mysqli($hostname, $username, $password, $database, $port);
+$conn = new mysqli($hostname, $username, $password, $database);
 
 // Verificar a conexão
 if ($conn->connect_error) {
