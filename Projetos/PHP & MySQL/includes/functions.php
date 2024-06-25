@@ -1,14 +1,14 @@
 <?php
-function connectDatabase()
+function getClientes($conn)
 {
-    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-    if ($conn->connect_error) {
-        die("Conexão falhou: " . $conn->connect_error);
-    }
-    return $conn;
-}
+    $sql = "SELECT CPF, NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO, LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO FROM jpCliente";
+    $result = $conn->query($sql);
 
-function sanitizeInput($data)
-{
-    return htmlspecialchars(stripslashes(trim($data)));
+    $clientes = [];
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $clientes[] = $row;
+        }
+    }
+    return $clientes;
 }
