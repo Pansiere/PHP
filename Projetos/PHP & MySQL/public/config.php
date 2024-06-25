@@ -3,21 +3,23 @@
 require_once 'includes/functions.php';
 require_once 'includes/classes/User.php';
 
-$server = "127.0.0.1";
+$hostname = "mysql";
 $username = "php";
-$password = "root123";
-$database = "SUCOS";
+$password = "password";
+$database = "DB";
+$port = 3306;
 
 // Criar a conexão com o MySQL usando MySQLi
-$conn = new mysqli($server, $username, $password, $database);
+$conn = new mysqli($hostname, $username, $password, $database, $port);
 
 // Verificar a conexão
 if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
 }
 
-echo "Conectado com sucesso!";
+echo "\nConectado ao banco de dados com sucesso!\n" . PHP_EOL;
 
+/*
 $sql = "SELECT CPF, NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO, LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO FROM jpCliente";
 $result = $conn->query($sql);
 
@@ -38,3 +40,4 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
+*/
