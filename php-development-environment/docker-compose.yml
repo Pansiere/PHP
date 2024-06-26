@@ -14,6 +14,7 @@ services:
       - "./.mysql-data/db:/var/lib/mysql"
     environment:
       - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_ROOT_HOST='%'
       - MYSQL_DATABASE=DB
       - MYSQL_USER=php
       - MYSQL_PASSWORD=password
@@ -42,7 +43,7 @@ services:
     restart: always
     environment:
       - PMA_HOST=mysql
-    #      - PMA_USER=php
-    #      - PMA_PASSWORD=password
+      - PMA_USER=root
+      - PMA_PASSWORD=password
     ports:
       - "8080:80"
