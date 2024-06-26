@@ -11,6 +11,7 @@ services:
     working_dir: /application
     volumes:
       - ".:/application"
+      - "./.mysql-data/db:/var/lib/mysql"
     environment:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=DB
@@ -34,3 +35,14 @@ services:
     volumes:
       - ".:/application"
       - "./phpdocker.io/php-fpm/php-ini-overrides.ini:/etc/php/8.3/fpm/conf.d/99-overrides.ini"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=password
+    ports:
+      - "8080:80"
