@@ -1,0 +1,15 @@
+SELECT `clientes`.`CPF`,
+    `clientes`.`NOME`,
+    `clientes`.`ENDERECO1`,
+    `clientes`.`ENDERECO2`,
+    `clientes`.`BAIRRO`,
+    `clientes`.`CIDADE`,
+    `clientes`.`ESTADO`,
+    `clientes`.`CEP`,
+    `clientes`.`IDADE`,
+    `clientes`.`SEXO`,
+    `clientes`.`LIMITE_CREDITO`,
+    `clientes`.`VOLUME_COMPRA`,
+    `clientes`.`PRIMEIRA_COMPRA`,
+    `clientes`.`DATA_NASCIMENTO`
+FROM `loja`.`clientes`;
