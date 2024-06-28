@@ -19,9 +19,6 @@ CREATE TABLE produtos (
     update_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-INSERT INTO `loja`.`produtos` (`nome`, `sku`, `descricao`, `categoria`, `preco`, `unidade_medida`, `peso`, `quantidade_estoque`, `fabricante`, `fornecedor`, `deleted_at`, `create_at`, `update_at`) 
-VALUES ('Pneu aro 26', 'cod123', 'Pneu comum', 'Pneu', 50, '26', 3, 150, 'Levorin', 'IZAPA', NULL, CURDATE(), CURRENT_TIMESTAMP);
-
 CREATE TABLE clientes (
     CPF varchar(11) NOT NULL primary key,
     NOME varchar(30) DEFAULT NULL,
@@ -38,6 +35,3 @@ CREATE TABLE clientes (
     PRIMEIRA_COMPRA bit(1) DEFAULT NULL,
     DATA_NASCIMENTO date DEFAULT NULL
 );
-
-INSERT INTO clientes (`CPF`, `NOME`, `ENDERECO1`, `ENDERECO2`, `BAIRRO`, `CIDADE`, `ESTADO`, `CEP`, `IDADE`, `SEXO`, `LIMITE_CREDITO`, `VOLUME_COMPRA`, `PRIMEIRA_COMPRA`, `DATA_NASCIMENTO`) 
-VALUES ('14872134554','Joao Pedro V. Pansiere','Ipês','111','Coqueiral','Aracruz','ES','29199144','22','M','3000','232', false, '1999-12-05');
