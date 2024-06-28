@@ -17,7 +17,7 @@ services:
       - MYSQL_DATABASE=loja
     networks:
       environment_network:
-        ipv4_address: 172.30.0.1
+        ipv4_address: 172.30.0.2
 
   webserver:
     image: "nginx:alpine"
@@ -30,7 +30,7 @@ services:
       - "80:80"
     networks:
       environment_network:
-        ipv4_address: 172.30.0.2
+        ipv4_address: 172.30.0.3
 
   php-fpm:
     build: phpdocker.io/php-fpm
@@ -41,7 +41,7 @@ services:
       - "./phpdocker.io/php-fpm/php-ini-overrides.ini:/etc/php/8.3/fpm/conf.d/99-overrides.ini"
     networks:
       environment_network:
-        ipv4_address: 172.30.0.3
+        ipv4_address: 172.30.0.4
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
@@ -54,7 +54,7 @@ services:
       - "8080:80"
     networks:
       environment_network:
-        ipv4_address: 172.30.0.4
+        ipv4_address: 172.30.0.5
 
 networks:
   environment_network:

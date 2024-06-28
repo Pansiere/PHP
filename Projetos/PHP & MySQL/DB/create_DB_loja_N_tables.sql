@@ -20,18 +20,29 @@ CREATE TABLE produtos (
 );
 
 CREATE TABLE clientes (
-    CPF varchar(11) NOT NULL primary key,
-    NOME varchar(30) DEFAULT NULL,
-    ENDERECO1 varchar(150) DEFAULT NULL,
-    ENDERECO2 varchar(150) DEFAULT NULL,
-    BAIRRO varchar(50) DEFAULT NULL,
-    CIDADE varchar(50) DEFAULT NULL,
-    ESTADO varchar(50) DEFAULT NULL,
-    CEP varchar(8) DEFAULT NULL,
-    IDADE smallint DEFAULT NULL,
-    SEXO varchar(1) DEFAULT NULL,
-    LIMITE_CREDITO float DEFAULT NULL,
-    VOLUME_COMPRA float DEFAULT NULL,
-    PRIMEIRA_COMPRA bit(1) DEFAULT NULL,
-    DATA_NASCIMENTO date DEFAULT NULL
+    id INT auto_increment NOT NULL primary key,
+    nome VARCHAR(50) NOT NULL,
+    telefone varchar(30),
+    endereco varchar(150) DEFAULT NULL,
+    bairro varchar(50) DEFAULT NULL,
+    cidade varchar(50) DEFAULT NULL,
+    estaddo varchar(50) DEFAULT NULL,
+    cep varchar(8) DEFAULT NULL
+);
+
+CREATE TABLE bicicletas (
+    cor varchar(11) NOT NULL primary key,
+    tamanho_do_aro varchar(30) DEFAULT NULL,
+    descricao TINYTEXT
+);
+
+CREATE TABLE ordem_de_servico (
+    id INT auto_increment NOT NULL primary key,
+    nome VARCHAR(50) NOT NULL,
+    telefone varchar(30),
+    endereco varchar(150) DEFAULT NULL,
+    bairro varchar(50) DEFAULT NULL,
+    cidade varchar(50) DEFAULT NULL,
+    estaddo varchar(50) DEFAULT NULL,
+    cep varchar(8) DEFAULT NULL
 );
