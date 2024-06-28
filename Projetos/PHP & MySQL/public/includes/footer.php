@@ -1,5 +1,5 @@
 <div class="footer">
-    <p>Rodapé da Página</p>
+    <p><?= "&copy; " . date("Y") . " Bicicletaria Pansiere."; ?></p>
 </div>
 </body>
 

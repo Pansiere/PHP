@@ -13,5 +13,5 @@
 
 <body>
     <div class="header">
-        <h1>Bem-vindo à Minha Página PHP</h1>
+        <h1>Bicicletaria Pansiere</h1>
     </div>
