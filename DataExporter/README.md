@@ -28,7 +28,9 @@ Para usar este projeto:
 1. Clone o repositório para sua máquina local.
 
    ```
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/pansiere/PHP.git && \
+   cd PHP/DataExporter && \
+   php -S localhost:8001 -t .
    ```
 
 2. Abra `index.html` em seu navegador para acessar o formulário de inserção de filmes.
