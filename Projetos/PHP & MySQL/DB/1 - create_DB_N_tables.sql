@@ -27,15 +27,6 @@ CREATE TABLE IF NOT EXISTS status_da_os (
     deleted_at TIMESTAMP NULL DEFAULT NULL
 );
 
-CREATE TABLE IF NOT EXISTS os_produtos (
-    os_id INT,
-    produto_id INT,
-    quantidade INT NOT NULL,
-    PRIMARY KEY (os_id, produto_id),
-    FOREIGN KEY (os_id) REFERENCES ordem_de_servico(id),
-    FOREIGN KEY (produto_id) REFERENCES produtos(id)
-);
-
 CREATE TABLE IF NOT EXISTS ordem_de_servico (
     id INT AUTO_INCREMENT PRIMARY KEY,
     status_da_os_id INT NULL,
@@ -45,5 +36,14 @@ CREATE TABLE IF NOT EXISTS ordem_de_servico (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP NULL DEFAULT NULL,
     FOREIGN KEY (cliente_id) REFERENCES clientes(id),
-    FOREIGN KEY (status_da_os_id) REFERENCES status_da_os(id),
+    FOREIGN KEY (status_da_os_id) REFERENCES status_da_os(id)
+);
+
+CREATE TABLE IF NOT EXISTS os_produtos (
+    os_id INT,
+    produto_id INT,
+    quantidade INT NOT NULL,
+    PRIMARY KEY (os_id, produto_id),
+    FOREIGN KEY (os_id) REFERENCES ordem_de_servico(id),
+    FOREIGN KEY (produto_id) REFERENCES produtos(id)
 );
