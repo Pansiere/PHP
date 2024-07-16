@@ -4,6 +4,7 @@ $conteudoArquivoJson = file_get_contents('filme.json');
 $filme = json_decode($conteudoArquivoJson, true);
 
 ?>
+
 <!DOCTYPE html>
 <html>
 
