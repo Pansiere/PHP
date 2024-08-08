@@ -3,7 +3,7 @@
         'name' => 'pansiere/exe',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '39bc440245efc6559468fe21f0181e720e6f6b46',
+        'reference' => '5a9316069281ab0da7d324931daf5390319a02c4',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -130,7 +130,7 @@
         'pansiere/exe' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '39bc440245efc6559468fe21f0181e720e6f6b46',
+            'reference' => '5a9316069281ab0da7d324931daf5390319a02c4',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

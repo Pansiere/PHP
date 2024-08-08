@@ -34,7 +34,9 @@
       "@test"
     ],
     "post-update-cmd": [
-      "@commands"
+      "@commands",
+      "echo Mensagem do ZSH, mtu top isso. Posso dar um 'apt update por exemplo'.",
+      "echo $PWD"
     ]
   },
   "scripts-descriptions": {
