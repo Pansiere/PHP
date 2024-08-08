@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'pansiere/exe',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '39bc440245efc6559468fe21f0181e720e6f6b46',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -128,9 +128,9 @@
             'dev_requirement' => true,
         ),
         'pansiere/exe' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '39bc440245efc6559468fe21f0181e720e6f6b46',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -27,15 +27,18 @@
     "test": "phpunit src/ExecutaScripPeloComposer.php",
     "cs": "phpcs --standard=PSR12 src/",
     "phan": "phan --allow-polyfill-parser",
-    "command": "Pansiere\\Exe\\ExecutaScripPeloComposer::mensagem",
+    "commands": "Pansiere\\Exe\\ExecutaScripPeloComposer::mensagem",
     "check": [
       "@phan",
       "@cs",
       "@test"
+    ],
+    "post-update-cmd": [
+      "@commands"
     ]
   },
   "scripts-descriptions": {
     "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT",
-    "command": "Executa método de classe definidos no Composer"
+    "commands": "Executa método de classe definidos no Composer"
   }
 }
