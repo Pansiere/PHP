@@ -1,0 +1,41 @@
+{
+  "name": "pansiere/exe",
+  "description": "Testing a software",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Pansiere\\Exe\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joao Pedro V. Pansiere",
+      "email": "ojp027@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.9",
+    "symfony/dom-crawler": "^6.0",
+    "symfony/css-selector": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.3",
+    "squizlabs/php_codesniffer": "^3.10",
+    "phan/phan": "^5.4"
+  },
+  "scripts": {
+    "test": "phpunit src/ExecutaScripPeloComposer.php",
+    "cs": "phpcs --standard=PSR12 src/",
+    "phan": "phan --allow-polyfill-parser",
+    "command": "Pansiere\\Exe\\ExecutaScripPeloComposer::mensagem",
+    "check": [
+      "@phan",
+      "@cs",
+      "@test"
+    ]
+  },
+  "scripts-descriptions": {
+    "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT",
+    "command": "Executa método de classe definidos no Composer"
+  }
+}
