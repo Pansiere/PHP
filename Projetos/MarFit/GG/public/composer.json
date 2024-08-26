@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "Pansiere\\Alura\\": "src/"
+      "Pansiere\\MarFit\\": "src/"
     }
   },
   "require": {

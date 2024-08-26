@@ -14,7 +14,7 @@ class ComposerStaticInitac2d307f4ed514763a8119f3523066bb
         ),
         'P' => 
         array (
-            'Pansiere\\Alura\\' => 15,
+            'Pansiere\\MarFit\\' => 16,
         ),
         'M' => 
         array (
@@ -39,7 +39,7 @@ class ComposerStaticInitac2d307f4ed514763a8119f3523066bb
         array (
             0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
         ),
-        'Pansiere\\Alura\\' => 
+        'Pansiere\\MarFit\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
